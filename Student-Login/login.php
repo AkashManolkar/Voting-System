@@ -26,14 +26,12 @@
                 // alert("Login Successful");
                 
             </script>
-
-
         ';
     }
     else{
         echo '
         <script>
-            alert("Login Failure");
+            alert("Incorrect Roll-Number or Password");
             location="index.html";
         </script>
         ';

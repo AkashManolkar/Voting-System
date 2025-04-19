@@ -1,1 +1,0 @@
-ALTER TABLE addcandidate ADD COLUMN description TEXT AFTER post; 

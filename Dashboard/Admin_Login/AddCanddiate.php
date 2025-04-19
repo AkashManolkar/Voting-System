@@ -16,9 +16,9 @@
 
 	if (mysqli_num_rows($check_roll) > 0) {
 		echo '<script>
-				alert("Roll Number already exists!");
-				location = "AdminDashboard.php #Add Candidate"; // Redirect back to add candidate page
-			</script>';
+					alert("Roll Number already exists!");
+					location = "AdminDashboard.php #Add Candidate"; // Redirect back to add candidate page
+				</script>';
 	} else {
 		
 	// First insert the candidate
@@ -36,8 +36,8 @@
 		move_uploaded_file($tmp_name1, "Image/$image");
 		
 		echo '<script>
-				alert("Candidate Added Successfully");
-				location = "AdminDashboard.php #Add Candidate";
+					alert("Candidate Added Successfully");
+					location = "AdminDashboard.php #Add Candidate";
 			  </script>';
 	}
 	else{

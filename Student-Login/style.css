@@ -1,24 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    /* border: 1px solid black; */
 }
 
-body{
-    font-family:'lato',sans-serif;
-    
+body {
+    font-family: 'lato', sans-serif;
+
 }
 
-.outer{
+.outer {
     width: 100vw;
     height: 100vh;
-    /* background: linear-gradient(to top left,#3ed8ff,#a8f5ff); */
-    
 }
 
-.inner{
+.inner {
     width: 500px;
     height: 500px;
     margin: 0 auto;
@@ -26,53 +22,51 @@ body{
     top: 50%;
     transform: translateY(-50%);
     padding: 40px 40px;
-    
-
     background-color: #ffffff09;
-    /* backdrop-filter: blur(8px); */
-    /* background: linear-gradient(to top left,#ffffffff,#ffffff33); */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
     border-radius: 10px;
-    
+
     z-index: 2;
 }
 
-h1{
+h1 {
     font-size: 1.7rem;
     color: #212121;
     text-align: center;
-    
+
 }
 
-.sinheader{
+.sinheader {
 
     font-size: 0.2rem;
     color: #555;
 }
 
-.sinbody{
+.sinbody {
     margin: 10px 0 20px 0;
 }
 
-.sinbody p{
+.sinbody p {
     margin: 20px 0;
-    
-} 
-.sinbody p a{
-    color: #3498db;
-    
-} 
-.sinbody p a:hover{
-    color: blue;
-    
-} 
 
-.sinbody p label{
+}
+
+.sinbody p a {
+    color: #3498db;
+
+}
+
+.sinbody p a:hover {
+    color: blue;
+
+}
+
+.sinbody p label {
     display: block;
     font-weight: bold;
 }
 
-.sinbody p input{
+.sinbody p input {
     width: 100%;
     padding: 10px;
     border: 2px solid #cccc;
@@ -81,28 +75,30 @@ h1{
     margin-top: 4px;
 }
 
-.sinbody p input[type="submit"]{
+.sinbody p input[type="submit"] {
     background-color: #3498db;
     border: none;
     color: white;
     cursor: pointer;
 }
 
-.sinbody p input[type="submit"]:hover{
+.sinbody p input[type="submit"]:hover {
     background-color: #083350;
 }
 
-.sinfooter p{
+.sinfooter p {
     color: #555;
     text-align: center;
 }
 
-.sinfooter p a{
-    color:#3498db ;
+.sinfooter p a {
+    color: #3498db;
 }
-.sinfooter p a:hover{
-    color:blue ;
+
+.sinfooter p a:hover {
+    color: blue;
 }
+
 .admin-link {
     position: absolute;
     top: 20px;
@@ -115,24 +111,7 @@ h1{
     background-color: #f0f0f0;
     transition: all 0.3s ease;
 }
+
 .admin-link:hover {
     background-color: #ddd;
 }
-/* .circle{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    background: linear-gradient(to right, #ffffff33, #ffffffff );
-    position: absolute;
-} */
-/* 
-.c1{
-    top: 100px;
-    left: 40px;
-}
-
-.c2{
-    bottom: 100px;
-    right: 50px;
-} */
-

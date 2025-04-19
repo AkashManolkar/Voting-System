@@ -93,17 +93,17 @@ $conn->close();
     <div class="container">
         <h2>Reset Password</h2>
         <form action="reset_password.php" method="post">
-            <input type="hidden" name="roll_number" value="<?php echo $_GET['roll_number']; ?>">
+            <input type="hidden" name="roll_number" value="<?php echo $_GET['roll_number']; ?>"/>
             <p>
                 <label>New Password</label>
-                <input type="password" name="password" placeholder="ENter New Password" required>
+                <input type="password" name="password" placeholder="ENter New Password" required />
             </p>
             <p>
                 <label>Confirm Password</label>
-                <input type="password" name="cpassword" placeholder="Enter Comform Password" required>
+                <input type="password" name="cpassword" placeholder="Enter Comform Password" required />
             </p>
             <p>
-                <input type="submit" value="Reset Password" class="reset">
+                <input type="submit" value="Reset Password" class="reset" />
             </p>
         </form>
     </div>
