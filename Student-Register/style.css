@@ -20,6 +20,11 @@ body {
     font-size: 0.8rem;
     margin-top: 4px;
 }
+.sinheader h1{
+    text-align: center;
+    color: #2c3e50;
+    
+}
 
 .outer {
 

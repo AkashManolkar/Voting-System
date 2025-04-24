@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'lato', sans-serif;
+    /* font-family: 'lato', sans-serif; */
+    font-family: 'Segoe UI', sans-serif;
 
 }
 
@@ -34,6 +35,11 @@ h1 {
     color: #212121;
     text-align: center;
 
+}
+.sinheader h1{
+    text-align: center;
+    color: #2c3e50;
+    
 }
 
 .sinheader {
@@ -113,5 +119,7 @@ h1 {
 }
 
 .admin-link:hover {
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    background-color: #083350;
+    color: white;
 }

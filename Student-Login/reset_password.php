@@ -87,6 +87,9 @@ $conn->close();
         margin-top: 10px;
         border-radius: 5px;
     }
+    .reset:hover{
+        background-color: #083350;
+    }
 </style>
 
 <body>

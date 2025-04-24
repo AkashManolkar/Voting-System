@@ -5,9 +5,10 @@
     $conn=new mysqli('localhost','root','','studentdatabase');
     if($conn->connect_error) {
         die("connection failed: " . $conn->connect_error);
-    }else{
-        echo "database connection";
     }
+    // else{
+    //     echo "database connection";
+    // }
 
 
     $roll_number=$_POST['roll_number'];
