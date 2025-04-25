@@ -11,7 +11,7 @@
         if ($votes === null || $gid === null || $uid === null || $position === null) {
             echo '<script>
                     alert("Error: Missing data. Please try again.");
-                    location="../dashboard.php";
+                    location="../Dashboard/dashboard.php";
                 </script>';
             exit();
         }
@@ -21,7 +21,7 @@
         if (mysqli_num_rows($check_vote) > 0) {
             echo '<script>
                     alert("You have already voted for this position!");
-                    location="../dashboard.php";
+                    location="../Dashboard/dashboard.php";
                 </script>';
             exit();
         }
@@ -51,7 +51,7 @@
                 mysqli_commit($conn);
                 echo '<script>
                         alert("Voting Successful");
-                        location="../dashboard.php";
+                        location="../Dashboard/dashboard.php";
                     </script>';
             } else {
                 throw new Exception("Error updating votes");
@@ -60,13 +60,13 @@
             mysqli_rollback($conn);
             echo '<script>
                     alert("Some Error Occurred. Please try again.");
-                    location="../dashboard.php";
+                    location="../Dashboard/dashboard.php";
                 </script>';
         }
     } else {
         echo '<script>
                 alert("Invalid Request: Please submit the form properly.");
-                location="../dashboard.php";
+                location="../Dashboard/dashboard.php";
             </script>';
     }
 ?>

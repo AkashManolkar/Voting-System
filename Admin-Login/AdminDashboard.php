@@ -5,7 +5,7 @@
 	if (!isset($_SESSION['adminlogin']) || $_SESSION['adminlogin'] !== true) {
 		echo '<script>
 				alert("Please login as admin to access this page");
-				location = "../../Student-Login/index.html";
+				location = "../Student-Login/index.html";
 			</script>';
 		exit();
 	}

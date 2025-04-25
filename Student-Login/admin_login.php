@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['adminlogin'] = true;
         $_SESSION['admin_name'] = $name;
         echo '<script>
-                location = "../Dashboard/Admin_Login/AdminDashboard.php";
+                location = "../Admin-Login/AdminDashboard.php";
               </script>';
     } else {
         echo '<script>
