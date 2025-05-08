@@ -37,17 +37,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dashboard </title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' 'unsafe-inline' 'unsafe-eval' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:;">
+	<title>Dashboard</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Font Awesome 4.7.0 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<!-- W3.CSS -->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+	<!-- Font Awesome 6.4.0 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 
 	<style>
 		.navbar {
@@ -171,7 +170,7 @@
 						<a class="nav-link active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link " href="#vote"><i class="fa fa-fw fa-vote-yea"></i> Vote</a>
+						<a class="nav-link" href="#vote"><i class="fa fa-fw fa-vote-yea"></i> Vote</a>
 					</li>
 				</ul>
 				<ul class="navbar-nav">
@@ -253,7 +252,11 @@
 									<div class="candidate-card">
 										<div class="row">
 											<div class="col-md-4">
+<<<<<<< HEAD
 												<img src="../Admin/images/<?php echo $row['photo']; ?>"
+=======
+												<img src="../Admin-Login/Image/<?php echo $row['photo']; ?>"
+>>>>>>> 851f22c396eeba714a1604d56a0c0d95d5453bd0
 													class="img-fluid candidate-photo"
 													alt="Candidate Photo">
 											</div>
@@ -261,7 +264,12 @@
 												<p class="card-title"><strong>Name :</strong> <?php echo $row['cname']; ?></p>
 												<p class="card-text"><strong>Roll Number :</strong> <?php echo $row['roll_number'] ?? 'Not Set'; ?></p>
 												<p class="card-text"> <?php echo $row['description']  ?></p>
+<<<<<<< HEAD
 												<form action="../Admin/vote.php" method="post">
+=======
+												<!-- <p class="card-text"><strong>Total Votes:</strong> <?php echo $row['votes']; ?></p> -->
+												<form action="../Admin-Login/vote.php" method="post">
+>>>>>>> 851f22c396eeba714a1604d56a0c0d95d5453bd0
 													<input type="hidden" name="gvotes" value="<?php echo $row['votes']; ?>">
 													<input type="hidden" name="gid" value="<?php echo $row['id']; ?>">
 													<input type="hidden" name="position" value="<?php echo $position; ?>">
