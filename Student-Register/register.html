@@ -17,7 +17,7 @@
             </header>
 
             <main class="sinbody">
-                <form action="register.php" method="post" enctype="multipart/form-data">
+                <form id="registrationForm" action="register.php" method="post" enctype="multipart/form-data">
                     <div class="container">
                         <p>
                             <label>Full Name <span style="color: red">*</span></label>
@@ -53,7 +53,10 @@
                         </select>
                     </p>
                 </div>
+                <!-- <small>Password must contain at least 8 characters, including uppercase, lowercase, number, and special character.</small> -->
+
                 <div class="container">
+                    
                     <p>
                         <label>Password <span style="color: red">*</span></label>
                         <input type="password" name="password" id="password" placeholder="Enter Your Password"
@@ -64,7 +67,12 @@
                         <input type="password" name="cpassword" id="cpassword" placeholder="Enter Your Conform Password"
                             required />
                     </p>
+                   
                 </div>
+                <small style="color: red; font-size: 0.9rem;">
+                    Password must be at least 8 characters and include uppercase, 
+                    lowercase, number, and special character.
+                </small>
                     <p>
                         <input type="submit" name="" id="submit" value="Submit" />
                     </p>
@@ -79,5 +87,23 @@
             </footer>
         </div>
     </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (e) {
+            const password = document.getElementById('password').value;
+            const cpassword = document.getElementById('cpassword').value;
+    
+            const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    
+            if (!strongPasswordRegex.test(password)) {
+                alert("Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.");
+                e.preventDefault(); // Stop form submission
+            } else if (password !== cpassword) {
+                alert("Passwords do not match.");
+                e.preventDefault(); // Stop form submission
+            }
+        });
+    </script>
+    
 </body>
 </html>

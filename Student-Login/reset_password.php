@@ -95,21 +95,43 @@ $conn->close();
 <body>
     <div class="container">
         <h2>Reset Password</h2>
-        <form action="reset_password.php" method="post">
+        <form id="resetForm" action="reset_password.php" method="post">
             <input type="hidden" name="roll_number" value="<?php echo $_GET['roll_number']; ?>"/>
             <p>
                 <label>New Password</label>
-                <input type="password" name="password" placeholder="ENter New Password" required />
+                <input type="password" id="password" name="password" placeholder="ENter New Password" required />
             </p>
             <p>
                 <label>Confirm Password</label>
-                <input type="password" name="cpassword" placeholder="Enter Comform Password" required />
+                <input type="password" id="cpassword" name="cpassword" placeholder="Enter Comform Password" required />
             </p>
+            <small style="color: red; font-size: 0.9rem;">
+                Password must be at least 8 characters and include uppercase, lowercase, number, 
+                and special character.
+            </small>
             <p>
                 <input type="submit" value="Reset Password" class="reset" />
             </p>
+            
         </form>
     </div>
+    
+    <script>
+    document.getElementById('resetForm').addEventListener('submit', function (e) {
+        const password = document.getElementById('password').value;
+        const cpassword = document.getElementById('cpassword').value;
+
+        const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+        if (!strongPasswordRegex.test(password)) {
+            alert("Password must be at least 8 characters and include uppercase, lowercase, number, and special character.");
+            e.preventDefault();
+        } else if (password !== cpassword) {
+            alert("Passwords do not match.");
+            e.preventDefault();
+        }
+    });
+</script>
 </body>
 
 </html>
