@@ -51,7 +51,7 @@
         $photo = $candidate['photo']; // Keep existing photo by default
         if (isset($_FILES['photo']) && $_FILES['photo']['error'] == 0) {
             $photo = $_FILES['photo']['name'];
-            move_uploaded_file($_FILES['photo']['tmp_name'], "Image/$photo");
+            move_uploaded_file($_FILES['photo']['tmp_name'], "images/$photo");
         }
 
         // Start transaction
@@ -166,7 +166,7 @@
                                 <small class="text-muted">Leave empty to keep current photo</small>
                                 <?php if ($candidate['photo']) { ?>
                                     <div class="mt-2">
-                                        <img src="Image/<?php echo $candidate['photo']; ?>" width="200" />
+                                        <img src="images/<?php echo $candidate['photo']; ?>" width="200" />
                                     </div>
                                 <?php } ?>
                             </div>

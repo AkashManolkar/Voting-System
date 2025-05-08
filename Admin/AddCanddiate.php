@@ -33,7 +33,8 @@
 			mysqli_query($conn, "INSERT INTO candidate_positions (candidate_id, position) VALUES('$candidate_id', '$position')");
 		}
 		
-		move_uploaded_file($tmp_name1, "Image/$image");
+		// Move the uploaded photo to the images directory
+		move_uploaded_file($tmp_name1, "images/$image");
 		
 		echo '<script>
 					alert("Candidate Added Successfully");

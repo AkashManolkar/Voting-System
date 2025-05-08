@@ -171,9 +171,6 @@
 					</li>
 				</ul>
 				<ul class="navbar-nav">
-					<!-- <li class="nav-item">
-					<a class="nav-link" href="#rightMenu" onclick="openRightMenu()"><i class="fa fa-fw fa-user"></i> Admin Login</a>
-					</li> -->
 					<li class="nav-item">
 						<a class="nav-link" href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 					</li>
@@ -252,7 +249,7 @@
 									<div class="candidate-card">
 										<div class="row">
 											<div class="col-md-4">
-												<img src="Admin_Login/Image/<?php echo $row['photo']; ?>"
+												<img src="../Admin/images/<?php echo $row['photo']; ?>"
 													class="img-fluid candidate-photo"
 													alt="Candidate Photo">
 											</div>
@@ -260,8 +257,7 @@
 												<p class="card-title"><strong>Name :</strong> <?php echo $row['cname']; ?></p>
 												<p class="card-text"><strong>Roll Number :</strong> <?php echo $row['roll_number'] ?? 'Not Set'; ?></p>
 												<p class="card-text"> <?php echo $row['description']  ?></p>
-												<!-- <p class="card-text"><strong>Total Votes:</strong> <?php echo $row['votes']; ?></p> -->
-												<form action="Admin_Login/vote.php" method="post">
+												<form action="../Admin/vote.php" method="post">
 													<input type="hidden" name="gvotes" value="<?php echo $row['votes']; ?>">
 													<input type="hidden" name="gid" value="<?php echo $row['id']; ?>">
 													<input type="hidden" name="position" value="<?php echo $position; ?>">

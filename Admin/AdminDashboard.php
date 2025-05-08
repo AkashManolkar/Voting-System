@@ -5,7 +5,7 @@
 	if (!isset($_SESSION['adminlogin']) || $_SESSION['adminlogin'] !== true) {
 		echo '<script>
 				alert("Please login as admin to access this page");
-				location = "../../Student-Login/index.html";
+				location = "../Student-Login/index.html";
 			</script>';
 		exit();
 	}
@@ -99,7 +99,7 @@
 		</ul>
 		<nav class="navbar navbar-expand-lg bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#"> <img src="Image/Admin.png" width="20%"> <b style="color: darkcyan;">Admin Panel</b> </a>
+				<a class="navbar-brand" href="#"> <img src="images/Admin.png" width="20%"> <b style="color: darkcyan;">Admin Panel</b> </a>
 				<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -127,7 +127,7 @@
 	</div>
 
 	<div id="Header">
-		<img src="Image/background4.jpg" width="100%" height="600px">
+		<img src="images/background4.jpg" width="100%" height="600px">
 	</div>
 	<br/><br/>
 
@@ -181,7 +181,7 @@
 				</form>
 			</div>
 			<div class="col-sm-4">
-				<img src="Image/header.jfif" width="100%" />
+				<img src="images/header.jfif" width="100%" />
 
 			</div>
 		</div>
@@ -218,7 +218,7 @@
 								<td><?php echo $row['cname']; ?></td>
 								<td><?php echo implode(', ', $positions); ?></td>
 								<td><?php echo $row['roll_number']; ?></td>
-								<td><img src="Image/<?php echo $row['photo']; ?>" width="50%" height="150px;"></td>
+								<td><img src="images/<?php echo $row['photo']; ?>" width="50%" height="150px;"></td>
 								<td>
 									<a href="edit_candidate.php?id=<?php echo $candidate_id; ?>" class="btn btn-primary btn-sm">Edit</a>
 									<a href="delete_candidate.php?id=<?php echo $candidate_id; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this candidate?')">Delete</a>

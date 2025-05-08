@@ -6,7 +6,7 @@
     if (!isset($_SESSION['adminlogin'])) {
         echo '<script>
                     alert("Please login as admin to view results");
-                    location = "AdminLogin.php";
+                    location = "admin_login.php";
                 </script>';
         exit();
     }
