@@ -69,7 +69,6 @@
 			left: 0;
 			right: 0;
 			z-index: 1000;
-			
 		}
 
 		.navbar {
@@ -79,17 +78,12 @@
 			left: 0;
 			right: 0;
 			z-index: 999;
-			
 		}
 
 		body {
 			padding-top: 120px;
 			/* Height of header + navbar */
 		}
-		.collapse{
-			margin-left: 130px;
-		}
-		
 	</style>
 
 
@@ -100,12 +94,12 @@
 	<div class="header-container">
 		<ul class="nav justify-content-center bg-dark" style="padding: 10px;">
 			<li class="nav-item">
-				<h1 style="font-family: sans; color: lawngreen;margin: 0;">Online Voting System</h1>
+				<h1 style="font-family: sans;color: lawngreen;margin: 0;">Online Voting System</h1>
 			</li>
 		</ul>
 		<nav class="navbar navbar-expand-lg bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#" style="cursor:context-menu"> <img src="images/Admin.png" width="20%"> <b style="color: darkcyan; cursor:context-menu">Admin Panel</b> </a>
+				<a class="navbar-brand" href="#"> <img src="images/Admin.png" width="20%"> <b style="color: darkcyan;">Admin Panel</b> </a>
 				<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -132,12 +126,12 @@
 		</nav>
 	</div>
 
-	<!-- <div id="Header">
+	<div id="Header">
 		<img src="images/background4.jpg" width="100%" height="600px">
-	</div> -->
-	
-	<hr style="border: 3px solid black;">
-	<div class="container-fluid" id="Add Candidate" style="padding: 40px;">
+	</div>
+	<br/><br/>
+
+	<div class="container-fluid" id="Add Candidate" style="box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);padding: 40px;">
 		<div class="row">
 			<div class="col-sm-8">
 				<h2 style="text-align: center;"> <span style="background: mediumblue;color: whitesmoke;padding: 10px;border-radius: 10px;">Add Candidate for Election</span> </h2><br>
@@ -192,7 +186,7 @@
 			</div>
 		</div>
 	</div>
-<hr style="border: 3px solid black;">
+
 	<br><br>
 
 	<div class="container" id="Total">

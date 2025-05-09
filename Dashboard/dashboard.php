@@ -149,10 +149,6 @@
 		.container {
 			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
 		}
-		.carousel-caption{
-			margin-bottom: 200px;
-		}
-		
 	</style>
 
 </head>
@@ -188,10 +184,10 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img src="Image/21.jpg" class="d-block w-100" height="700px" alt="...">
-				<div class="carousel-caption d-md-block">
-			        <h3>Welcome to the Student Council Election</h3>
-					<h4> Vote Smart. Vote Secure. Vote for Your Future.</h4>
-			      </div>
+				<!-- <div class="carousel-caption d-md-block">
+			        <h2>WellCome to the Online Voting System</h2>
+			        <p>Some representative placeholder content for the first slide.</p>
+			      </div> -->
 			</div>
 		</div>
 	</div>
